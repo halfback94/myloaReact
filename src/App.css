@@ -1,0 +1,172 @@
+.tmargin10 {
+	margin-top: 10px;
+}
+
+.margin10 {
+    margin: 10px;
+}
+
+.bmargin10 {
+	margin-bottom: 10px;
+}
+
+.pad0 {
+	padding: 0;
+}
+
+.pad10 {
+	padding: 10;
+}
+
+.pad20 {
+	padding: 20;
+}
+
+.lpad10 {
+	padding-left: 10px;
+}
+
+.mart20 {
+    margin-top: 20px !important;
+}
+
+.marb20 {
+    margin-bottom: 20px !important;
+}
+
+.th-pull-right {
+    text-align: right
+}
+
+.text-esther {
+    color: rgba(51, 255, 255) !important;
+}
+
+.text-bg-esther {
+    background-color: rgba(51, 255, 255) !important;
+}
+
+.text-ancient {
+    color: rgba(255, 229, 204) !important;
+}
+
+.text-bg-ancient {
+    background-color: rgba(255, 229, 204) !important;
+}
+
+.text-relics {
+    color: rgba(204, 102, 0) !important;
+}
+
+.text-bg-relics {
+    background-color: rgba(204, 102, 0) !important;
+}
+
+.text-legend {
+    color: rgba(255, 153, 51) !important;
+}
+
+.text-bg-legend {
+    background-color: rgba(255, 153, 51) !important;
+}
+
+.text-hero {
+    color: rgba(255, 0, 255) !important;
+}
+
+.text-bg-hero {
+    background-color: rgba(255, 0, 255) !important;
+}
+
+
+@media (min-width: 992px) {
+    .bd-layout {
+        display: grid;
+        grid-template-areas: "sidebar main";
+        grid-template-columns: 1fr 5fr;
+        gap: 1.5rem
+    }
+}
+
+.bd-sidebar {
+    grid-area: sidebar
+}
+
+@media (min-width: 992px) {
+    .bd-sidebar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5rem;
+        display: block !important;
+        height: calc(100vh - 6rem);
+        padding-left: .25rem;
+        margin-left: -.25rem;
+        overflow-y: auto
+    }
+}
+
+.bd-main {
+    grid-area: main
+}
+
+@media (max-width: 991.98px) {
+    .bd-main {
+        max-width: 760px;
+        margin-inline: auto
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-main {
+        display: grid;
+        grid-template-areas: "intro" "toc" "content";
+        grid-template-rows: auto auto 1fr;
+        gap: inherit
+    }
+}
+
+@media (min-width: 992px) {
+    .bd-main {
+        grid-template-areas: "intro   toc" "content toc";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 4fr 1fr
+    }
+}
+
+.bd-intro {
+    grid-area: intro
+}
+
+.bd-content {
+    grid-area: content;
+    min-width: 1px
+}
+
+.bd-toc {
+    grid-area: toc
+}
+
+@media (min-width: 992px) {
+    .bd-toc {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5rem;
+        right: 0;
+        z-index: 2;
+        height: calc(100vh - 7rem);
+        overflow-y: auto
+    }
+}
+
+.body-Login {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
